@@ -301,7 +301,7 @@ Delete a user from SNS. Callback has format callback(err)
 #### deleteTopic(topicArn, callback)
 Delete the topic with the given topicArn. The callback has the format fn(err).
 
-#### sendMessage(endpointArn, message, callback)
+#### sendMessage(endpointArn, message, attributes, callback)
 Send a message to a user. The _message_ parameter can be a String, or an Object with the formats below. The callback format is callback(err, messageId).
 
 #### subscribe(endpointArn, topicArn, callback)
@@ -355,8 +355,8 @@ Send message to all users. May take some time with large sets of users as it has
 
 
 ## Contributors
-Contrinbutions are very much welcome, just submit a PR with updated tests where 
-applicable. Current tests run against the actual SNS service, which may not be 
+Contrinbutions are very much welcome, just submit a PR with updated tests where
+applicable. Current tests run against the actual SNS service, which may not be
 ideal so feel free to mock that out if you like too ;)
 
 Thanks to these awesome folks for contributions:
